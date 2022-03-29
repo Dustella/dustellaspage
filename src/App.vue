@@ -2,21 +2,13 @@
   <div id="fake-body" :class="{ 'is-preload': isloadingt }">
     <div id="wrapper">
       <!-- Header -->
-      <header id="header">
-        <div class="content">
-          <div class="inner">
-            <h1>{{ mainpage.title }}</h1>
-            <p>{{ mainpage.subTitle }}</p>
-          </div>
-        </div>
-        <router-view />
-      </header>
+      <router-view />
       <!-- Footer -->
       <footer id="footer">
-        <p class="copyright">&copy; {{ mainpage.copyright }}</p>
+        <p class="copyright"> {{ mainpage.copyright }}</p>
+        <p class="copyright">{{ mainpage.ICP }}</p>
       </footer>
     </div>
-
     <div id="bg"></div>
   </div>
 </template>
@@ -28,9 +20,8 @@ export default defineComponent({
     return {
       isloadingt: true,
       mainpage: {
-        title: "Dustella Here",
-        subTitle: "啦啦啦啦",
         copyright: "Dustella",
+        ICP: "苏ICP备20013766号-2",
       },
     };
   },
@@ -799,7 +790,7 @@ input[type="radio"] + label:before {
 .image:before {
   pointer-events: none;
   background-image: url("./assets/overlay.png");
-  background-color: rgba(19, 21, 25, 0.5);
+  background-color: rgba(19, 21, 25, 0.945);
   border-radius: 4px;
   content: "";
   display: block;
@@ -1313,9 +1304,8 @@ button {
   -ms-transition: -ms-transform 0.325s ease-in-out,
     -ms-filter 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-  /*background-image: url("../../images/bg.jpg");*/
-  background-image: url("https://qwq.nya.al/banner13.jpg");
-  background-position: center;
+  background-image: url("https://img-cdn.dustella.net/87553102_p0.webp");
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;

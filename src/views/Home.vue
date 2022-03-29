@@ -1,11 +1,20 @@
 <template>
-  <nav>
-    <ul v-for="i in links" :key="i.id">
-      <li>
-        <a :href="i.href">{{ i.name }}</a>
-      </li>
-    </ul>
-  </nav>
+  <header id="header">
+    <div class="content">
+      <div class="inner">
+        <h1>{{ mainpage.title }}</h1>
+        <p>{{ mainpage.subTitle }}</p>
+      </div>
+    </div>
+
+    <nav>
+      <ul v-for="i in links" :key="i.id">
+        <li>
+          <a :href="i.href">{{ i.name }}</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <script lang="ts">
@@ -32,6 +41,11 @@ export default defineComponent({
           href: "https://index.dustella.net",
         },
       ],
+      mainpage: {
+        title: "Dustella Here",
+        subTitle: "啦啦啦啦",
+        copyright: "Dustella",
+      },
     };
   },
 });
