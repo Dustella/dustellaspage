@@ -1,4 +1,6 @@
-# dustellaspage
+# 特菈魔女旧的主页
+
+就是把一个模板主页用 Vue 改写了一遍，没什么意思。
 
 ## Project setup
 
@@ -12,18 +14,3 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-
-```bash
-npm run build
-```
-
-### Lints and fixes files
-
-```bash
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
